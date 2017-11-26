@@ -27,4 +27,4 @@ EXPOSE 9999
 
 VOLUME ["/www","/var/log/nginx"]
 
-CMD ['docker-php-entrypoint']
+CMD ['/bin/sh', '-c', 'docker-php-entrypoint']
